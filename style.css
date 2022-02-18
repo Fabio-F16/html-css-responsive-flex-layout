@@ -85,6 +85,11 @@ nav{
     padding: 30px 0px;
 }
 
+.jumbotron > *{
+    width: 90%;
+    margin: auto;
+}
+
 section > *{
     /* width: 90%; */
     /* margin: auto; */
@@ -107,8 +112,9 @@ section > *{
     border-radius: 15px;
 }
 
-#users article, #work-with-us article{
-    margin: 20px;
+#users article, #work-with-us article, #about-us{
+    width: 90%;
+    margin: auto;
 }
 
 .text img{
@@ -117,6 +123,19 @@ section > *{
 
 #work-with-us .text, #about-us .text{
     text-align: left;
+}
+
+#work-with-us{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+#users{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-bottom: 30px;
 }
 
 
@@ -138,6 +157,7 @@ section > *{
     }
 
     .get-a-demo{
+        margin: 0px;
         width: 65%;
     }
 
@@ -158,21 +178,21 @@ section > *{
         
     }
 
-    #work-with-us > *{
+    #work-with-us article{
         width: 40%;
     }
 
     #about-us .text{
         display: flex;
-
     }
 
 
-
-
-    /* #work-with-us .text{
-        width: 45%;
-    } */
-
     
+}
+
+@media screen and (min-width: 1300px){
+
+
+
+
 }
