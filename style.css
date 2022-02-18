@@ -13,6 +13,8 @@
 .text{
     margin: auto;
     width: 90%;
+    padding: 15px;
+    border-radius: 15px;
 
 }
 
@@ -45,6 +47,10 @@
 
 .bg-purple{
     background-color: purple;
+}
+
+.bg-white{
+    background-color: white;
 }
 
 
@@ -90,3 +96,14 @@ section > *{
     margin-bottom: 30px;
 }
 
+.container .text .bg-white{
+    border-radius: 15px;
+}
+
+.text img{
+    border-radius: 50%;
+}
+
+#work-with-us .text{
+    text-align: left;
+}
