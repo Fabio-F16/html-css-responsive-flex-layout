@@ -12,10 +12,13 @@
 
 .text{
     margin: auto;
-    width: 90%;
     padding: 15px;
     border-radius: 15px;
 
+}
+
+.flex{
+    display: flex;
 }
 
 
@@ -75,7 +78,7 @@ nav{
     align-items: center;
 }
 
-section{
+.jumbotron{
     display: flex;
     flex-direction: column;
     row-gap: 30px;
@@ -83,8 +86,8 @@ section{
 }
 
 section > *{
-    width: 90%;
-    margin: auto;
+    /* width: 90%; */
+    /* margin: auto; */
     /* margin-top: 100px; */
     border-radius: 15px;
     padding: 30px 0px;
@@ -92,9 +95,9 @@ section > *{
     font-size: 1.5rem;
 }
 
-.get-a-demo{
+/* .get-a-demo{
     height: 500px;
-}
+} */
 
 .text > *{
     margin-bottom: 30px;
@@ -104,10 +107,72 @@ section > *{
     border-radius: 15px;
 }
 
+#users article, #work-with-us article{
+    margin: 20px;
+}
+
 .text img{
     border-radius: 50%;
 }
 
 #work-with-us .text, #about-us .text{
     text-align: left;
+}
+
+
+/* media queries */
+
+@media screen and (min-width: 460px){
+    
+    
+    .jumbotron{
+        padding: 30px;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .tablet{
+        width: 32%;
+    }
+
+    .get-a-demo{
+        width: 65%;
+    }
+
+    #users .quote{
+        display: flex;
+        text-align: left;
+        align-items: center;
+        /* row-gap: 10px; */
+        /* margin-left: 10px; */
+    }
+
+
+    #work-with-us{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+    #work-with-us > *{
+        width: 40%;
+    }
+
+    #about-us .text{
+        display: flex;
+
+    }
+
+
+
+
+    /* #work-with-us .text{
+        width: 45%;
+    } */
+
+    
 }
