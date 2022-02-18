@@ -53,6 +53,10 @@
     background-color: white;
 }
 
+.bg-grey{
+    background-color: grey;
+}
+
 
 
 
@@ -104,6 +108,6 @@ section > *{
     border-radius: 50%;
 }
 
-#work-with-us .text{
+#work-with-us .text, #about-us .text{
     text-align: left;
 }
